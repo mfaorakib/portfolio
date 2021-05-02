@@ -1,0 +1,57 @@
+.top-spacer {
+  height: 100vh;
+}
+
+.bottom-spacer {
+  height: 110vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color:  #11161F;
+}
+
+.header_link {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  outline: none;
+  background-color: #11161F;
+}
+.header_link a{
+  color: white;
+}
+
+.selected {
+  border-bottom: 3px solid  #e41b6f;
+  color:  #e41b6f;
+}
+
+.section {
+  height: auto;
+}
+
+#About {
+   
+  /* background: linear-gradient(18deg, #11161F, #2e3238); */
+}
+
+#Providers {
+  background-color: #f4769e;
+}
+
+#Operations {
+  background-color: #8face0;
+}
