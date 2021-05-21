@@ -14,6 +14,7 @@ const Image = () => {
         <p>I'm a Front-End Developer for ChowNow in Los Angeles, CA. <br />
   I have serious passion for UI effects, animations and creating <br /> intuitive, dynamic user experiences.
    Let's make something special.</p>
+   <a href="https://drive.google.com/uc?export=download&id=1vIwy0BTWIcJjSoQsxldfomeKL-CAmUBf"><button className="button3 btn-primary">Download Resume</button></a> 
     </div>
     );
 };

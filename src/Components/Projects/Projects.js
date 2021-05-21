@@ -7,7 +7,7 @@ const Projects = () => {
         <div className="projects p-5">
              <div className="container">
             <h1 className="text-center">Projects</h1>
-            <div className="row my-4">
+            <div className="row md-4">
                 {
                     projects.map(project => <Project project={project} ></Project>)
                 }

@@ -8,18 +8,18 @@ import { faLightbulb } from '@fortawesome/free-regular-svg-icons';
 
 const About = () => {
     return (
-        <div className="main-header">
+        <div className="main-header ">
         <h1 id="about">About</h1>
-        <div className="container">
+        <div className="container ">
             <div className="row">
-                <div className="col-md-3">
-                    <div className="hexagon-wrapper">
+                <div className="col-md-3 ">
+                    <div  className="hexagon-wrapper">
                         <div className="hexagon">
                             <p> <FontAwesomeIcon icon={faTachometerAlt} /></p>
                         </div>
                     </div>
-                    <h1>Fast</h1>
-                    <p>Fast load times and lag free  interaction, my highest priority.</p>
+                    <h3 className="text-center">Fast</h3>
+                    <p className="text-center">Fast load times and lag free  interaction, my highest priority.</p>
                 </div>
                 <div className="col-md-3">
                     <div className="hexagon-wrapper">
@@ -27,8 +27,8 @@ const About = () => {
                             <p> <FontAwesomeIcon icon={faDesktop} /></p>
                         </div>
                     </div>
-                    <h1>Responsive</h1>
-                    <p>My layouts will work on any  device, big or small.</p>
+                    <h3 className="text-center">Responsive</h3>
+                    <p className="text-center">My layouts will work on any  device, big or small.</p>
                 </div>
                 <div className="col-md-3">
                     <div className="hexagon-wrapper">
@@ -36,8 +36,8 @@ const About = () => {
                             <p> <FontAwesomeIcon icon={faLightbulb} /></p>
                         </div>
                     </div>
-                    <h1>Intuitive</h1>
-                    <p>Strong preference for easy to  use, intuitive UX/UI.</p>
+                    <h3 className="text-center">Intuitive</h3>
+                    <p className="text-center">Strong preference for easy to  use, intuitive UX/UI.</p>
                 </div>
                 <div className="col-md-3">
                     <div className="hexagon-wrapper">
@@ -45,8 +45,8 @@ const About = () => {
                             <p> <FontAwesomeIcon icon={faRocket} /></p>
                         </div>
                     </div>
-                    <h1>Dynamic</h1>
-                    <p>Websites don't have to be static, I love making pages come to life.</p>
+                    <h3 className="text-center">Dynamic</h3>
+                    <p className="text-center">Websites don't have to be static, I love making pages come to life.</p>
                 </div>
             </div>
         </div>

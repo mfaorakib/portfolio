@@ -1,3 +1,4 @@
+
 .top-spacer {
   height: 100vh;
 }
@@ -20,16 +21,21 @@
   background-color:  #11161F;
 }
 
-.header_link {
+.header li{
+  height:40px;
+}
+ .header_link {
   padding: 20px;
-  color: white;
+  color: rgb(238, 232, 232);
   font-weight: bold;
   border: none;
   border-bottom: 3px solid transparent;
   cursor: pointer;
   outline: none;
-  background-color: #11161F;
+  background-color: #11161F; 
+   
 }
+
 .header_link a{
   color: white;
 }
@@ -42,16 +48,6 @@
 .section {
   height: auto;
 }
-
-#About {
-   
-  /* background: linear-gradient(18deg, #11161F, #2e3238); */
-}
-
-#Providers {
-  background-color: #f4769e;
-}
-
-#Operations {
-  background-color: #8face0;
-}
+ .navbar{
+  background-color: white;
+} 

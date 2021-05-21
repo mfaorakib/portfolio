@@ -4,17 +4,14 @@ import "./Blog.css"
 const Blog = () => {
     return (
         <div class='container main-box'>
-        <div class="row">
-          <div class="col-md-12">
+        <div class="row ">
+          <div class="col-md-12 justify-content-center">
             <h1 class="text-center dgn">Recent Blog</h1>
-      
-      
             <ul>
               <li class="col-md-3">
                 <div class='front'></div>
                 <div class='back'>
-                  <img src='http://morestarwars.com/wp-content/uploads/2017/03/x-wing-gif.gif'></img>
-                  {/* <Link class='link' to='/blog'>Click here</Link> */}
+                  <img src='http://morestarwars.com/wp-content/uploads/2017/03/x-wing-gif.gif'></img>                 
                 </div>
               </li>
               <li class="col-md-3">

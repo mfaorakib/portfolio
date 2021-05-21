@@ -6,6 +6,8 @@ import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import "./Home.css";
+import { faBars} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const getDimensions = ele => {
     const { height } = ele.getBoundingClientRect();
     const offsetTop = ele.offsetTop;
@@ -32,7 +34,7 @@ const Home = () => {
   const BlogRef = useRef(null);
   const HomeRef=useRef(null);
   const ContactRef= useRef(null);
-
+   
   const sectionRefs = [
     { section: "Home", ref: HomeRef },
     { section: "About", ref: AboutRef },
@@ -67,6 +69,8 @@ const Home = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [visibleSection]);
+
+  
     return (
         <div>
            
@@ -76,51 +80,66 @@ const Home = () => {
   
 <div className="content">
   
-  <div className="sticky">
-    <div className="header" ref={headerRef}>
-    <button
+  <div className="sticky md-6">
+  <nav class="navbar-expand-lg ">
+  <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></span>
+  </button>
+    <div className="header md-3 collapse navbar-collapse" id="navbarSupportedContent" ref={headerRef}>
+      
+    <button 
         type="button"
         className={`header_link ${visibleSection === "Home" ? "selected" : ""}`} 
       >
          <a class="nav-link" aria-current="page" href="#">Home</a> 
-      </button>
-      <button
+      </button> 
+       
+        <button
         type="button"
+        id="About"
         className={`header_link ${visibleSection === "About" ? "selected" : ""}`}
         onClick={() => {
           scrollTo(AboutRef.current);
         }}
       >
         About
-      </button>
+      </button> 
+       
       <button
         type="button"
+        id="Work"
         className={`header_link ${visibleSection === "Work" ? "selected" : ""}`}
         onClick={() => {
           scrollTo(WorkRef.current);
         }}
       >
         Work
-      </button>
-      <button
+      </button>  
+      
+      
+  <button
         type="button"
+        id="Blog"
         className={`header_link ${visibleSection === "Blog" ? "selected" : ""}`}
         onClick={() => {
           scrollTo(BlogRef.current);
         }}
       >
         Blog
-      </button>
+      </button>  
+      
       <button
         type="button"
+        id="Contact"
         className={`header_link ${visibleSection === "Contact" ? "selected" : ""}`}
         onClick={() => {
           scrollTo(ContactRef.current);
         }}
       >
         Contact   
-      </button>
-    </div>
+      </button>  
+      </div>
+      </nav>
   </div>
   <div style={{width:'100ev'}} className="section" id="About" ref={AboutRef}>  <About></About> </div>
   <div className="section" id="Work" ref={WorkRef}><Projects></Projects> </div>
@@ -131,6 +150,7 @@ const Home = () => {
    <br></br>
     <Contact></Contact>  
     <Footer></Footer>
+   
     </div>
 </div>
 

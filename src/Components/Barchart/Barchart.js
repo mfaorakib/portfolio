@@ -3,7 +3,7 @@ import './Barchart.css'
 const Barchart = () => {
     return (
         <div className="barChart">
-        <div className="skills">
+        <div className="skills md-6">
 
 <div className="charts">
 <div className="chart chart--dev">
@@ -13,7 +13,7 @@ const Barchart = () => {
    <p className="chart__bar" style={{width: "90%"}}>
       <div className="chart__label">
         HTML5
-        <span style={{marginLeft:"90%"}}>90%</span>
+        <span style={{marginLeft:"50%"}}>90%</span>
       </div>
     </p>
    </div>
@@ -21,7 +21,7 @@ const Barchart = () => {
    <p className="chart__bar" style={{width: '80%'}}>
     <div className="chart__label">
         CSS3
-        <span style={{marginLeft:"94%"}}>80%</span>
+        <span style={{marginLeft:"50%"}}>80%</span>
       </div>
     </p>
    </div>
@@ -29,7 +29,7 @@ const Barchart = () => {
    <p className="chart__bar" style={{width: '70%'}}>
     <div className="chart__label">
         JAVASCRIPT
-        <span style={{marginLeft:"87%"}}>70%</span>
+        <span style={{marginLeft:"50%"}}>70%</span>
       </div>
     </p>
    </div>
@@ -37,7 +37,7 @@ const Barchart = () => {
    <p className="chart__bar" style={{width: "70%"}}>
     <div className="chart__label">
         REACT
-        <span style={{marginLeft:"94%"}}>70%</span>
+        <span style={{marginLeft:"50%"}}>70%</span>
       </div>
     </p>
    </div>
@@ -45,7 +45,7 @@ const Barchart = () => {
    <p className="chart__bar" style={{width: '25%'}}>
     <div className="chart__label">
         Express
-        <span style={{marginLeft:"63%"}}>25%</span>
+        <span style={{marginLeft:"50%"}}>25%</span>
       </div>
     </p>
    </div>
@@ -53,7 +53,7 @@ const Barchart = () => {
    <p className="chart__bar" style={{width: "60%"}}>
     <div className="chart__label">
        NODEJS
-        <span style={{marginLeft:"90%"}}>60%</span>
+        <span style={{marginLeft:"50%"}}>60%</span>
       </div>
     </p>
    </div>
@@ -61,7 +61,7 @@ const Barchart = () => {
    <p className="chart__bar" style={{width: "70%"}}>
       <div className="chart__label">
         MONGODB
-        <span style={{marginLeft:"87%"}}>70%</span>
+        <span style={{marginLeft:"50%"}}>70%</span>
       </div>
     </p>
    </div>
