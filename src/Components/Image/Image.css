@@ -11,3 +11,44 @@
     background-repeat: no-repeat;
     background-color: #000000;
   }
+  button {
+    font: 1em sans-serif;
+    font-size: large;
+    /* width: 300px; */
+    text-transform: uppercase;
+    padding: 25px 80px;
+    margin: 15px 30px;
+    background:#e41b6f;
+    overflow: hidden;
+    position: relative;
+    border-radius:5px;
+    border-color: #e41b6f;
+    color: white;
+  }
+  button:before {
+      left: 48%;
+  }
+  button:active {
+    background: #e41b6f;
+    top: 2px;
+  }
+  button > span {
+    display: inline-block;
+    transition: all 0.5s;
+  }
+   
+  .icon-down:before {
+    content: "Download";
+    position: absolute; 
+    width: bolder;
+  }
+  .btn-2:before {
+    top: -100%;
+    transition: all 0.5s;
+  }
+  .btn-2:hover:before {
+    top: 30%;
+  }
+  .btn-2:hover > span {
+    transform: translateY(300%);
+  }
